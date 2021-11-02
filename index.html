@@ -18,13 +18,13 @@
         <div class="container">
             <img src="https://www.boolean.careers/images/misc/logo.png" alt="">
             <div class="input_container">
-                <input class="input_size" type="text">
-                <button class="input_size">Aggiungi</button>
+                <input v-model="addedItems" class="input_size w_in" type="text">
+                <button @click="addList_I" class="input_size">Aggiungi</button>
             </div>
             <div class="list">
                 <div v-for="(list, index) in lists" class="item_listed">
                     <p>{{lists[index]}}</p>
-                    <i @click="removeList_I(index)" class="fas fa-times-circle"></i>
+                    <i @click="removeList_I(index)" class="fas fa-times"></i>
                 </div>
             </div>
         </div>
