@@ -1,8 +1,9 @@
-
+/* REGOLE GENERALI */
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* SEZIONE INPUT */
 .container{
     margin: auto;
     width: 900px;
@@ -27,6 +28,9 @@ body{
 .input_container{
     margin-bottom: 30px;
 }
+
+/* SEZIONE LISTA */
+
 
 .list{
     background-color: #F5F7F7;
