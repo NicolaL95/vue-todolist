@@ -28,6 +28,7 @@
                 <h2 class="title">Completed Tasks</h2>
                 <div v-for="(list, index) in listCompl" class="item_listed">
                     <p>{{listCompl[index]}}</p>
+                    <i @click="returnToList(index,1)" class="fas fa-redo"></i>
                 </div>
             </div>
             <div class="list">
@@ -43,8 +44,10 @@
 
             <div class="list">
                 <h2 class="title">Trash Folder</h2>
+                <i @click="removeAll" class="fas fa-dumpster-fire remove_all"></i>
                 <div v-for="(list, index) in listTrash" class="item_listed">
                     <p>{{listTrash[index]}}</p>
+                    <i @click="returnToList(index,0)" class="fas fa-trash-restore-alt"></i>
                 </div>
             </div>
         </div>

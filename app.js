@@ -29,8 +29,18 @@ const app = new Vue({
             }
             this.addedItems = "";
         },
-        addList_I() {
-
+        returnToList(i, r_t_l) {
+            if (r_t_l == 1) {
+                this.lists.push(this.listCompl[i])
+                this.listCompl.splice(i, 1);
+            }
+            else {
+                this.lists.push(this.listTrash[i])
+                this.listTrash.splice(i, 1);
+            }
+        },
+        removeAll() {
+            this.listTrash = [];
         }
     }
 })

@@ -65,3 +65,9 @@ body{
 .dist{
     margin-left: 5px;
 }
+
+.remove_all{
+    float: right;
+    margin-top: -46px;
+    font-size: 2rem;
+}
