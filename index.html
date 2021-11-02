@@ -20,6 +20,7 @@
             <div class="input_container">
                 <input v-model="addedItems" class="input_size w_in" type="text">
                 <button @click="addList_I" class="input_size">Aggiungi</button>
+                <p v-show="error">Valore inserito non corretto</p>
             </div>
             <div class="list">
                 <div v-for="(list, index) in lists" class="item_listed">

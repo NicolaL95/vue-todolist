@@ -3,6 +3,7 @@ const app = new Vue({
 
     data: {
         addedItems: "",
+        error: false,
         lists: ["aggiornare il framework", "completare il front-end", "salvare la cheerleader per salvare il mondo"]
     },
     methods: {
@@ -12,9 +13,10 @@ const app = new Vue({
         addList_I() {
             if (this.addedItems.length >= 5) {
                 this.lists.push(this.addedItems);
+                this.error = false;
             }
             else {
-                alert("cia fraa")
+                this.error = true;
             }
             this.addedItems = "";
         }
