@@ -1,0 +1,37 @@
+.container{
+    margin: auto;
+    width: 900px;
+    text-align: center;
+}
+
+.container > img{
+    width: 33%;
+    margin-bottom: 15px;
+}
+
+.input_size{
+    border-radius: 6px;
+    padding: 6px;
+    border: 1px solid;
+}
+
+.input_container{
+    margin-bottom: 30px;
+}
+
+.list{
+    background-color: gray;
+    width: 500px;
+    margin: auto;
+}
+
+.item_listed{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.item_listed i{
+    cursor: pointer;
+}
